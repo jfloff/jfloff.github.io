@@ -11,119 +11,480 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/academicons.min.css" />
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
   </head>
   <body id="top">
 
+    <div id="titleBar" class="responsive-navigation visible-sm visible-xs">
+        <a href="#" class="toggle menu-toggle-btn"></a>
+    </div> <!-- /responsive_navigation -->
+
+    <div id="nav-top" class="nav-slide navigation responsive-menu">
+        <ul>
+          <li><a href="#about-section">About Me</a></li>
+          <li><a href="#news-section">News</a></li>
+          <li><a href="#publications-section">Publications</a></li>
+          <li><a href="#experience-section">Experience</a></li>
+          <li><a href="#projects-section">Projects</a></li>
+          <li><a href="#contacts-section">Contact</a></li>
+        </ul> <!-- /.main_menu -->
+    </div> <!-- /.responsive_menu -->
+
     <!-- Header -->
       <header id="header">
-        <a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-        <h1><strong>João Ferreira Loff</strong></h1>
-        <h1>PhD Researcher @ INESC-ID Lisboa</h1>
-        <ul class="icons">
-          <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-          <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-          <li><a href="#" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-          <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-        </ul>
+        <div class="header-info">
+          <a href="#" class="image avatar"><img src="images/avatar.png" alt="" /></a>
+          <h1><strong>João Ferreira Loff</strong></h1>
+          <h1>PhD Researcher @ INESC-ID</h1>
+          <ul class="icons">
+            <li><a href="https://dl.dropboxusercontent.com/u/12825632/joao-ferreira-loff.pdf" class="icon fa-download"><span class="label">CV</span></a></li>
+            <li><a href="mailto:jfloff@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+            <li><a href="https://github.com/jfloff/" class="icon fa-github"><span class="label">Github</span></a></li>
+            <li><a href="https://www.linkedin.com/in/jfloff" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+            <li><a href="https://twitter.com/jfloff/" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+          </ul>
+        </div>
+        <nav id="nav" class="nav-slide">
+          <ul>
+            <li><a href="#about-section" class="active">About Me</a></li>
+            <li><a href="#news-section">News</a></li>
+            <li><a href="#publications-section">Publications</a></li>
+            <li><a href="#experience-section">Experience</a></li>
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#contacts-section">Contact</a></li>
+          </ul>
+        </nav>
       </header>
 
     <!-- Main -->
       <div id="main">
 
-        <!-- One -->
-          <section id="one">
+        <!-- About Me -->
+          <section id="about-section">
             <header class="major">
-              <h2>Ipsum lorem dolor aliquam ante commodo<br />
-              magna sed accumsan arcu neque.</h2>
+              <h2>About Me</h2>
             </header>
-            <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
+            <p>I am a 1st year Ph.D. candidate at <a href="https://tecnico.ulisboa.pt/">Instituto Superior Técnico (IST) - Universidade de Lisboa</a>. I carry out my research at the <a href="http://gsd.inesc-id.pt/">Distributed Systems Group</a> at <a href="http://www.inesc-id.pt/">INESC-ID Lisboa</a>. I am kindly co-advised by Prof. <a href="http://www.gsd.inesc-id.pt/~jog/">João Garcia</a> and Prof. <a href="http://www.gsd.inesc-id.pt/~rodrigo/">Rodrigo Rodrigues</a>.</p>
+            <p>My research focuses on distributed systems and includes topics such as consistency semantics, distributed coordination and resource management. At this moment I am focused on how to <em>transparently integrate consistency across multiple cooperating heterogenous subsystem</em>.
             <ul class="actions">
-              <li><a href="#" class="button">Learn More</a></li>
+              <li><a href="https://dl.dropboxusercontent.com/u/12825632/joao-ferreira-loff.pdf" id="download-cv" class="button"><span class="icon fa-download"></span>  Download CV</a></li>
             </ul>
           </section>
 
-        <!-- Two -->
-          <section id="two">
-            <h2>Recent Work</h2>
-            <div class="row">
-              <article class="6u 12u$(xsmall) work-item">
-                <a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-                <h3>Magna sed consequat tempus</h3>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-              </article>
-              <article class="6u$ 12u$(xsmall) work-item">
-                <a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-                <h3>Ultricies lacinia interdum</h3>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-              </article>
-              <article class="6u 12u$(xsmall) work-item">
-                <a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-                <h3>Tortor metus commodo</h3>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-              </article>
-              <article class="6u$ 12u$(xsmall) work-item">
-                <a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-                <h3>Quam neque phasellus</h3>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-              </article>
-              <article class="6u 12u$(xsmall) work-item">
-                <a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-                <h3>Nunc enim commodo aliquet</h3>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-              </article>
-              <article class="6u$ 12u$(xsmall) work-item">
-                <a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-                <h3>Risus ornare lacinia</h3>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-              </article>
+        <!-- News -->
+          <section id="news-section">
+            <header class="major">
+              <h2>News</h2>
+            </header>
+
+            <div id="news" class="table-wrapper">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>2016-02-06</td>
+                    <td>I will be presenting my Ph.D. proposal titled "Integrating strong consistency across multiple stateful services" at <a href="http://ipads.se.sjtu.edu.cn/eurodw16/">EuroSys Doctoral Workshop (EuroDW 2016)</a>.</span></td>
+                  </tr>
+                  <tr>
+                    <td>2016-02-15</td>
+                    <td>I will be in London attending <a href="http://eurosys16.doc.ic.ac.uk/">EuroSys 2016</a>.</span></td>
+                  </tr>
+                  <tr>
+                    <td>2015-09-14</td>
+                    <td>I'm officially a Ph.D. candidate at Instituto Superior Técnico! 🎉</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <ul class="actions">
-              <li><a href="#" class="button">Full Portfolio</a></li>
-            </ul>
           </section>
 
-        <!-- Three -->
-          <section id="three">
-            <h2>Get In Touch</h2>
-            <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+          <!-- publications -->
+          <section id="publications-section">
+            <header class="major">
+              <h2>Publications</h2>
+            </header>
+            <p class="small-info"><i>Updated information is available from my <a href="https://scholar.google.pt/citations?user=tvFtrr0AAAAJ">Google Scholar</a> profile.</i></p>
             <div class="row">
-              <div class="8u 12u$(small)">
-                <form method="post" action="#">
-                  <div class="row uniform 50%">
-                    <div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                    <div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                    <div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-                  </div>
-                </form>
-                <ul class="actions">
-                  <li><input type="submit" value="Send Message" /></li>
+              <div class="12u">
+                <ul id="papers" class="alt">
+                  <li>
+                    <h2 class="title">Vadara: Predictive Elasticity for Cloud Applications</h2>
+                    <p class="authors"><strong>João Loff</strong>, João Garcia</p>
+                    <p class="conference">IEEE CloudCom 2014 - 6th IEEE International Conference on Cloud Computing Technology and Science</p>
+                    <div class="center">
+                      <ul class="icons paper-icons">
+                        <li><a href="https://www.dropbox.com/s/pj9u65ssh80mkfg/cloudcom14.pdf?dl=0" class="icon fa-file-pdf-o"></a></li>
+                        <li><a href="https://www.dropbox.com/s/9lzyasqqms7hxhg/cloudcom14-slides.pdf?dl=0" class="icon fa-desktop"></a></li>
+                        <li><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=7037714" class="icon fa-link"></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <h2 class="title">Predicting Well-being with Geo-Referenced Data Collected from Social Media Platforms</h2>
+                    <p class="authors"><strong>João Loff</strong>, Manuel Reis, Bruno Martins</p>
+                    <p class="conference">SAC 2015 - Proceedings of the 30th Annual ACM Symposium on Applied Computing</p>
+                    <div class="center">
+                      <ul class="icons paper-icons">
+                        <li><a href="https://www.dropbox.com/s/y94py8xt7ouohcv/sac2015.pdf?dl=0" class="icon fa-file-pdf-o"></a></li>
+                        <li><a href="https://www.dropbox.com/s/4xgwhqm6qz77wor/sac2015-slides.pdf?dl=0" class="icon fa-desktop"></a></li>
+                        <li><a href="http://dl.acm.org/citation.cfm?id=2695939" class="icon fa-link"></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <h2 class="title">A Decision Support System for Railway Track Maintenance and Renewal Planning</h2>
+                    <p class="authors">Paulo Teixeira, Luis Caetano, <strong>João Loff</strong>, Marco Baldeiras, José Clemente</p>
+                    <p class="conference">Civil-Comp 2014 - Second International Conference on Railway Technology: Research, Development and Maintenance</p>
+                    <div class="center">
+                      <ul class="icons paper-icons">
+                        <li><a href="https://www.dropbox.com/s/oexirrgxmzhpcgj/civilcomp14.pdf?dl=0" class="icon fa-file-pdf-o"></a></li>
+                        <li><a href="http://www.ctresources.info/ccp/paper.html?id=7848" class="icon fa-link"></a></li>
+                      </ul>
+                    </div>
+                  </li>
                 </ul>
               </div>
-              <div class="4u$ 12u$(small)">
+            </div>
+          </section>
+
+          <!-- News -->
+          <section id="experience-section">
+            <header class="major">
+              <h2>Experience</h2>
+            </header>
+
+            <div class="row">
+              <div class="12u">
+                <ul id="experience" class="alt">
+                  <li>
+                    <div class="experience-row row first-row">
+                      <span class="date 3u 12u$(xsmall)">Sept 2015 - Present</span>
+                      <h3 class="title 9u$ 12u$(xsmall)">Ph.D. Candidate <a href="https://tecnico.ulisboa.pt/">Instituto Superior Técnico</a></h3>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="desc 12u$">
+                        <li>Researcher in the <a href="http://gsd.inesc-id.pt/">Distributed Systems Group</a> at <a href="http://www.inesc-id.pt/">INESC-ID Lisboa</a>.</li>
+                        <li>Part of the <a href="http://www.gsd.inesc-id.pt/~rodrigo/dependablecloud/">DependableCloud</a> research project.</li>
+                      </ul>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="skills 12u$">
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="experience-row row first-row">
+                      <span class="date 3u 12u$(xsmall)">Nov 2014 - Sept 2015</span>
+                      <h3 class="title 9u$ 12u$(xsmall)">Software Engineer @ <a href="https://www.accenture.com/pt-pt/">Accenture</a></h3>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="desc 12u$">
+                        <li>Worked on mobile-based automated workforce management application.</li>
+                        <li>Performed workforce demand forecasting analysis.</li>
+                      </ul>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="skills 12u$">
+                        <li>C#</li>
+                        <li>R</li>
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="experience-row row first-row">
+                      <span class="date 3u 12u$(xsmall)">Apr 2012 - Present</span>
+                      <h3 class="title 9u$ 12u$(xsmall)">Software Engineer @ <a href="http://www.railgroup.pt/index.html">RAILGROUP.PT Research Group</a></h3>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="desc 12u$">
+                        <li>Lead a full-stack development team on <a href="http://www.modurail.org/">MODURAIL.PT</a> web-application.</li>
+                        <li>First version of MODURAIL.PT was placed in production at <a href="http://www.infraestruturasdeportugal.pt/">Infraestruturas de Portugal</a>.</li>
+                        <li>Currently I'm on a IT advisor role.</li>
+                      </ul>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="skills 12u$">
+                        <li>PHP</li>
+                        <li>Zend Framework</li>
+                        <li>PostgreSQL</li>
+                        <li>Bootstrap</li>
+                        <li>Highcharts</li>
+                        <li>Javascript</li>
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="experience-row row first-row">
+                      <span class="date 3u 12u$(xsmall)">Completed 2014</span>
+                      <h3 class="title 9u$ 12u$(xsmall)">M.S.E. in Computer Science Engineering @ <a href="https://tecnico.ulisboa.pt/">Instituto Superior Técnico</a></h3>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="desc 12u$">
+                        <li>Master Thesis in <a href="https://www.dropbox.com/s/z63yfo922hhentu/masterthesis.pdf?dl=0">Automated Elasticity and Scalability for Cloud Applications</a>. Scored 18 out of 20.</li>
+                        <li>Major in Software Engineering and minor in Enterprise Information Systems. Averaged 17 out of 20.</li>
+                      </ul>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="skills 12u$">
+                        <li>Distributed Systems</li>
+                        <li>Cloud Computing</li>
+                        <li>Ruby</li>
+                        <li>AWS</li>
+                        <li>Rackspace</li>
+                        <li>RabbitMQ</li>
+                        <li>C#</li>
+                        <li>Java</li>
+                        <li>R</li>
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="experience-row row first-row">
+                      <span class="date 3u 12u$(xsmall)">Completed 2012</span>
+                      <h3 class="title 9u$ 12u$(xsmall)">B.S.E. in Computer Science Engineering @ <a href="https://tecnico.ulisboa.pt/">Instituto Superior Técnico</a></h3>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="desc 12u$">
+                        <li>Final project scored 20 out of 20.</li>
+                        <li>Averaged 14 out of 20.</li>
+                      </ul>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="skills 12u$">
+                        <li>C++</li>
+                        <li>C</li>
+                        <li>Java</li>
+                        <li>Algorithms</li>
+                        <li>Operating Systems</li>
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <header class="major">
+              <h2>Additional Experience</h2>
+            </header>
+
+            <div class="row">
+              <div class="12u">
+                <ul id="experience" class="alt">
+                  <li>
+                    <div class="experience-row row first-row">
+                      <span class="date 3u 12u$(xsmall)">Dec '14 - April '15</span>
+                      <h3 class="title 9u$ 12u$(xsmall)">Technical Book Reviewer @ <a href="https://www.packtpub.com/">PACKT Publishing</a></h3>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="desc 12u$">
+                        <li>Technical reviewer for <a href="https://www.packtpub.com/web-development/implementing-cloud-design-patterns-aws">Implementing Cloud Patterns in AWS</a></li>
+                        <li>Focused on reviewing technical details regarding deploying known cloud computing patterns on AWS.</li>
+                      </ul>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="skills 12u$">
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="experience-row row first-row">
+                      <span class="date 3u 12u$(xsmall)">2013</span>
+                      <h3 class="title 9u$ 12u$(xsmall)"><a href="http://gdgpt.blogspot.com/">Google DevFest Portugal</a></h3>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="desc 12u$">
+                        <li>One of 200 chosen developers to attend a Google-sponsored event with workshops, networking and a hackathon.</li>
+                      </ul>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="skills 12u$">
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="experience-row row first-row">
+                      <span class="date 3u 12u$(xsmall)">2013</span>
+                      <h3 class="title 9u$ 12u$(xsmall)"><a href="http://lisboa.startuppirates.org/">Startup Pirates Lisboa</a></h3>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="desc 12u$">
+                        <li>One of 32 internationally chosen candidates to attend a week full entrepreneurship event with workshops, talks and networking events.</li>
+                        <li>Developed startup plan awarded top 5 (out of 10).</li>
+                      </ul>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="skills 12u$">
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+
+          <!-- News -->
+          <section id="projects-section">
+            <header class="major">
+              <h2>Projects</h2>
+            </header>
+            <p class="small-info"><i>Updated projects are available from my <a href="https://github.com/jfloff">Github</a> profile.</i></p>
+            <div class="row">
+              <div class="12u">
+                <ul id="experience" class="alt">
+                  <li>
+                    <div class="experience-row row first-row">
+                      <h3 class="title 2u 12u$(xsmall)"><a href="https://github.com/jfloff/taod">TaoD</a></h3>
+                      <p class="10u$ 12u$(xsmall)">TaoD is a naive implementation of Facebook's TAO API for its social graph.</p>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="skills 12u$">
+                        <li>TAO</li>
+                        <li>Python</li>
+                        <li>Redis</li>
+                        <li>SQLite</li>
+                        <li>MySQL</li>
+                        <li>Memcached</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="experience-row row first-row">
+                      <h3 class="title 2u 12u$(xsmall)"><a href="https://github.com/jfloff/alpine-python">alpine-python</a></h3>
+                      <p class="10u$ 12u$(xsmall)">A (very) small Python Docker image based on Alpine Linux.</p>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="skills 12u$">
+                        <li>Docker</li>
+                        <li>Python</li>
+                        <li>Alpine Linux</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="experience-row row first-row">
+                      <h3 class="title 2u 12u$(xsmall)"><a href="https://github.com/jfloff/pywfm">pywFM</a></h3>
+                      <p class="10u$ 12u$(xsmall)">pywFM is a Python wrapper for Steffen Rendle's libFM.</p>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="skills 12u$">
+                        <li>Python</li>
+                        <li>libFM</li>
+                        <li>Machine Learning</li>
+                        <li>Docker</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="experience-row row first-row">
+                      <h3 class="title 2u 12u$(xsmall)"><a href="https://github.com/jfloff/vadara">Vadara</a></h3>
+                      <p class="10u$ 12u$(xsmall)">Generic framework regarding cloud provider and employed elasticity strategy; that allows the development of elasticity strategies that are not tied with any provider.</p>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="skills 12u$">
+                        <li>Cloud Computing</li>
+                        <li>Ruby</li>
+                        <li>AWS</li>
+                        <li>RabbitMQ</li>
+                        <li>Rackspace Cloud</li>
+                        <li>InfluxDB</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="experience-row row first-row">
+                      <h3 class="title 2u 12u$(xsmall)"><a href="https://github.com/jfloff/HappiTweet">HappiTweet</a></h3>
+                      <p class="10u$ 12u$(xsmall)">Relates Twitter message location with locations' happiness. Repository for ACM Symposium on Applied Computing "Predicting Well-Being With Geo-Referenced Data Collected from Social Media Platforms".</p>
+                    </div>
+                    <div class="experience-row row">
+                      <ul class="skills 12u$">
+                        <li>R</li>
+                        <li>Twitter</li>
+                        <li>Ruby</li>
+                        <li>AWS</li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+
+        <!-- Three -->
+          <section id="contacts-section">
+            <header class="major">
+              <h2>Contacts</h2>
+            </header>
+
+            <div id="contacts" class="row">
+              <div class="-2u 5u -1u(xsmall) 11u$(xsmall)">
                 <ul class="labeled-icons">
                   <li>
                     <h3 class="icon fa-home"><span class="label">Address</span></h3>
-                    1234 Somewhere Rd.<br />
-                    Nashville, TN 00000<br />
-                    United States
+                    INESC-ID Lisboa<br />
+                    Rua Alves Redol Nº 9<br />
+                    Sala 612<br />
+                    1000-029, Lisboa<br />
+                    Portugal
                   </li>
+                </ul>
+              </div>
+              <div class="5u -1u$ -1u(xsmall) 11u$(xsmall)">
+                <ul class="labeled-icons">
                   <li>
                     <h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
-                    000-000-0000
+                    +351 963911708
                   </li>
                   <li>
                     <h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
-                    <a href="#">hello@untitled.tld</a>
+                    <a href="mailto:jfloff@gsd.inesc-id.pt">jfloff@gsd.inesc-id.pt</a>
                   </li>
                 </ul>
               </div>
             </div>
           </section>
 
-        <!-- Four -->
-        <!--
-          <section id="four">
+          <!-- <section id="four">
+            <section id="two">
+              <h2>Recent Work</h2>
+              <div class="row">
+                <article class="6u 12u$(xsmall) work-item">
+                  <a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+                  <h3>Magna sed consequat tempus</h3>
+                  <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                </article>
+                <article class="6u$ 12u$(xsmall) work-item">
+                  <a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+                  <h3>Ultricies lacinia interdum</h3>
+                  <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                </article>
+                <article class="6u 12u$(xsmall) work-item">
+                  <a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+                  <h3>Tortor metus commodo</h3>
+                  <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                </article>
+                <article class="6u$ 12u$(xsmall) work-item">
+                  <a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+                  <h3>Quam neque phasellus</h3>
+                  <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                </article>
+                <article class="6u 12u$(xsmall) work-item">
+                  <a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
+                  <h3>Nunc enim commodo aliquet</h3>
+                  <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                </article>
+                <article class="6u$ 12u$(xsmall) work-item">
+                  <a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
+                  <h3>Risus ornare lacinia</h3>
+                  <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                </article>
+              </div>
+              <ul class="actions">
+                <li><a href="#" class="button">Full Portfolio</a></li>
+              </ul>
+            </section>
+
             <h2>Elements</h2>
 
             <section>
@@ -434,12 +795,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
                 </div>
               </div>
               <h5>Left &amp; Right</h5>
-              <p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-              <p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+              <p><span class="image left"><img src="images/avatar.png" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+              <p><span class="image right"><img src="images/avatar.png" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
             </section>
 
-          </section>
-        -->
+          </section> -->
 
       </div>
 
@@ -453,10 +813,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <!-- Scripts -->
       <script src="assets/js/jquery.min.js"></script>
       <script src="assets/js/jquery.poptrox.min.js"></script>
+      <script src="assets/js/jquery.scrollzer.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
       <script src="assets/js/skel.min.js"></script>
       <script src="assets/js/util.js"></script>
       <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
       <script src="assets/js/main.js"></script>
-
   </body>
 </html>
